@@ -50,5 +50,7 @@ document.getElementById('search-button')?.addEventListener('click', () => {
     }
 });
 
-// Initialize the app by fetching the Pokemon list
-fetchPokemonList();
+// ウィンドウのロード時にfetchPokemonListを呼び出す
+window.onload = () => {
+    fetchPokemonList();
+}
